@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Display</title>
+</head>
+<body>
+
+  <label for="userInput">Enter text:</label>
+  <input type="text" id="userInput">
+  <button onclick="displayInput()">Display Input</button>
+
+  <br><br>
+
+  <label for="outputTextarea">Output:</label>
+  <textarea id="outputTextarea" rows="4" cols="50" readonly></textarea>
+
+  <script>
+    function displayInput() {
+      // Get the user input value
+      var userInputValue = document.getElementById("userInput").value;
+
+      // Get the textarea element
+      var outputTextarea = document.getElementById("outputTextarea");
+
+      // Update the content of the textarea with the user input value
+      outputTextarea.value = userInputValue;
+    }
+  </script>
+
+</body>
+</html>

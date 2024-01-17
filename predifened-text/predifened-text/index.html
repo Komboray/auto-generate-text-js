@@ -1,0 +1,41 @@
+<!-- //////////////////THIS FILE ALLOWS THE USER TO ADD PREDIFINED TEXT TO A TEXT AREA WITH THE USER INPUT AND THE ALREADY PREDEFINED TEXT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textarea Example</title>
+</head>
+<body>
+    <label for="userInput">Enter text:</label>
+  <input type="text" id="userInput">
+  <!-- <button onclick="displayInput()">Display Input</button> -->
+<br><br>
+
+<textarea id="myTextarea" rows="4" cols="50"></textarea>
+<button onclick="addPredefinedText()">Add Predefined Text</button>
+
+<script>
+  function addPredefinedText() {
+    // Get the textarea element
+    var textarea = document.getElementById('myTextarea');
+    // Get the user input value
+    var userInputValue = document.getElementById("userInput").value;
+
+    // // Get the textarea element
+    // var outputTextarea = document.getElementById("outputTextarea");
+
+    // Update the content of the textarea with the user input value
+    
+
+    // Define your predefined subset of text
+    var predefinedText = "This is" + userInputValue + "a predefined subset of ?";
+
+    // Add the predefined text to the textarea
+    textarea.value = predefinedText;
+  }
+</script>
+
+</body>
+</html>
