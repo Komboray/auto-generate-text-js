@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textarea Example</title>
+</head>
+<body>
+
+<textarea id="myTextarea" rows="4" cols="50"></textarea>
+<button onclick="addPredefinedText()">Add Predefined Text</button>
+
+<script>
+  function addPredefinedText() {
+    // Get the textarea element
+    var textarea = document.getElementById('myTextarea');
+
+    // Define your predefined subset of text
+    var predefinedText = "This is a predefined subset of text.";
+
+    // Add the predefined text to the textarea
+    textarea.value = predefinedText;
+  }
+</script>
+
+</body>
+</html>
